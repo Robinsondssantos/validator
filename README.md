@@ -58,7 +58,7 @@ Um `Field` possui:
 | `reset()`                 | `() => void`        | Limpa o erro                                                     |
 | `isValid()`               | `() => boolean`     | Retorna `true` se não há erro                                    |
   
-### `rule`  
+### `rule(value: string|number|boolean|null) => boolean|string`  
 
 Uma `Rule` é uma função que recebe o valor do campo e retorna:
 
