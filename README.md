@@ -31,7 +31,7 @@ form.isValid() // => true ou false
 
 ## 🧩 API  
 
-`createForm()`
+### `createForm()`
 
 Cria um novo formulário e retorna um objeto com os seguintes métodos:
 
@@ -42,7 +42,7 @@ Cria um novo formulário e retorna um objeto com os seguintes métodos:
 | `reset()`                | Reseta todos os erros dos campos.                         |
 
 
-`defineField(name: string)`
+### `defineField(name: string)`
 
 Cria um campo independente.  
 Útil quando você quer usar o Field sem precisar de um formulário completo.
@@ -58,7 +58,7 @@ Um `Field` possui:
 | `reset()`                 | `() => void`        | Limpa o erro                                                     |
 | `isValid()`               | `() => boolean`     | Retorna `true` se não há erro                                    |
   
-`rule`  
+### `rule`  
 
 Uma `Rule` é uma função que recebe o valor do campo e retorna:
 
