@@ -77,6 +77,7 @@ age.addRules([
   minValue(18, 'Você precisa ser maior de idade'),
 ])
 ```  
+As regras são avaliadas em ordem. A primeira que retornar uma string **define o erro** do campo.
 
 📏 Regras de validação prontas
 
