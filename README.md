@@ -47,7 +47,7 @@ Cria um novo formulário e retorna um objeto com os seguintes métodos:
 Cria um campo independente.  
 Útil quando você quer usar o Field sem precisar de um formulário completo.
 
-Um Field possui:
+Um `Field` possui:
 
 | Propriedade / Método      | Tipo                | Descrição                                                        |
 | ------------------------- | ------------------- | ---------------------------------------------------------------- |
@@ -69,8 +69,22 @@ Uma `Rule` é uma função que recebe o valor do campo e retorna:
 type Rule = (value: string | number | boolean | null) => boolean | string
 ```  
 
+* **Usando nullable com regras**  
+
+Se quiser permitir valores vazios, mas ainda validar quando preenchido:  
+```ts
+import { nullable, minLength } from '@seu-nome/validator'
+
+const username = form.addField('username')
+username.addRules([nullable([minLength(3)])])
+
+username.validate('') // => válido
+username.validate('Al') // => "Deve ter pelo menos 3 caracteres"
+```
+
 * **Regras encadeadas**  
-Você pode combinar várias regras em um campo:
+
+Você pode combinar várias regras em um campo:  
 ```ts
 age.addRules([
   required('Idade é obrigatória'),
