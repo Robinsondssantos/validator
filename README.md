@@ -67,7 +67,16 @@ Uma `Rule` é uma função que recebe o valor do campo e retorna:
 
 ```ts
 type Rule = (value: string | number | boolean | null) => boolean | string
-```
+```  
+
+* **Regras encadeadas**  
+Você pode combinar várias regras em um campo:
+```ts
+age.addRules([
+  required('Idade é obrigatória'),
+  minValue(18, 'Você precisa ser maior de idade'),
+])
+```  
 
 📏 Regras de validação prontas
 
