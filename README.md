@@ -1,18 +1,18 @@
-# 🧩 Validator
+# 🧩 Validator  
 
 Uma biblioteca leve e simples de **validação reativa** para Vue 3.  
 Permite criar e gerenciar campos e regras de validação de forma declarativa e reusável
 
 ---
 
-🧠 Conceito
+## 🧠 Conceito  
 
 A biblioteca gira em torno de três conceitos principais:
 * **Form** — agrupa e gerencia múltiplos campos.
 * **Field** — representa um campo do formulário com regras e estado de erro.
 * **Rule** — função que define a regra de validação.
 
-🛠️ Exemplo básico
+## 🛠️ Exemplo básico
 
 ```ts
 import { createForm, required, minLength } from '@seu-nome/validator'
@@ -29,7 +29,7 @@ name.validate('Alice') // => ""
 form.isValid() // => true ou false
 ```
 
-🧩 API
+## 🧩 API  
 
 `createForm()`
 
@@ -98,7 +98,7 @@ As regras são avaliadas em ordem. A primeira que retornar uma string **define o
 | `cep(message?)`            | CEP no formato `00000-000`                     |
 | `nullable(rules)`          | Permite campo vazio, mas valida se tiver valor |
 
-🧮 Exemplo com Vue 3 (Composition API)
+## 🧮 Exemplo com Vue 3 (Composition API)  
 
 ```vue
 <script setup lang="ts">
@@ -131,7 +131,7 @@ function submit() {
 </template>
 ```
 
-🧱 Build manual
+## 🧱 Build manual  
 
 Para compilar a biblioteca localmente:
 ```bash
@@ -147,11 +147,10 @@ dist/
  └─ validator.d.ts
 ```
 
-🧾 Licença
+## 🧾 Licença  
 
 MIT
 
-
-💬 Autor
+## 💬 Autor  
 
 Desenvolvido por **Robinson D. S. Santos**
