@@ -7,13 +7,14 @@ Permite criar e gerenciar campos e regras de validação de forma declarativa e 
 
 🧠 Conceito
 
-A biblioteca gira em torno de dois conceitos principais:
-* **Field** — representa um campo do formulário com regras e estado de erro.
+A biblioteca gira em torno de três conceitos principais:
 * **Form** — agrupa e gerencia múltiplos campos.
+* **Field** — representa um campo do formulário com regras e estado de erro.
+* **Rule** — função que define a regra de validação.
 
 🛠️ Exemplo básico
 
-```typescript
+```ts
 import { createForm, required, minLength } from '@seu-nome/validator'
 
 const form = createForm()
@@ -43,7 +44,7 @@ Cria um novo formulário e retorna um objeto com os seguintes métodos:
 
 `defineField(name: string)`
 
-Cria um campo independente.
+Cria um campo independente.  
 Útil quando você quer usar o Field sem precisar de um formulário completo.
 
 Um Field possui:
@@ -56,6 +57,17 @@ Um Field possui:
 | `validate(value)`         | `(value) => string` | Valida um valor e retorna a mensagem de erro (ou `""` se válido) |
 | `reset()`                 | `() => void`        | Limpa o erro                                                     |
 | `isValid()`               | `() => boolean`     | Retorna `true` se não há erro                                    |
+  
+`rule`  
+
+Uma `Rule` é uma função que recebe o valor do campo e retorna:
+
+* `true` se o valor for válido
+* Uma **string** com a mensagem de erro se inválido
+
+```ts
+type Rule = (value: string | number | boolean | null) => boolean | string
+```
 
 📏 Regras de validação prontas
 
