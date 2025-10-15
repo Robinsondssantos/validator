@@ -30,7 +30,7 @@ form.isValid() // => true ou false
 
 🧩 API
 
-createForm()
+`createForm()`
 
 Cria um novo formulário e retorna um objeto com os seguintes métodos:
 
@@ -41,7 +41,7 @@ Cria um novo formulário e retorna um objeto com os seguintes métodos:
 | `reset()`                | Reseta todos os erros dos campos.                         |
 
 
-defineField(name: string)
+`defineField(name: string)`
 
 Cria um campo independente.
 Útil quando você quer usar o Field sem precisar de um formulário completo.
@@ -78,7 +78,7 @@ Um Field possui:
 
 🧮 Exemplo com Vue 3 (Composition API)
 
-```typescript
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 import { createForm, required, email } from '@seu-nome/validator'
@@ -112,13 +112,13 @@ function submit() {
 🧱 Build manual
 
 Para compilar a biblioteca localmente:
-```
+```bash
 npm run build
 ```
 
 Saída esperada:
 
-```
+```bash
 dist/
  ├─ validator.es.js
  ├─ validator.umd.js
@@ -132,4 +132,4 @@ MIT
 
 💬 Autor
 
-Desenvolvido por Robinson D. S. Santos
+Desenvolvido por **Robinson D. S. Santos**
