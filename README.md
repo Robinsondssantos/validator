@@ -13,7 +13,7 @@ A biblioteca gira em torno de dois conceitos principais:
 
 🛠️ Exemplo básico
 
-``typescript
+```typescript
 import { createForm, required, minLength } from '@seu-nome/validator'
 
 const form = createForm()
@@ -78,6 +78,7 @@ Um Field possui:
 
 🧮 Exemplo com Vue 3 (Composition API)
 
+```typescript
 <script setup lang="ts">
 import { ref } from 'vue'
 import { createForm, required, email } from '@seu-nome/validator'
@@ -106,19 +107,23 @@ function submit() {
     <button type="submit">Enviar</button>
   </form>
 </template>
+```
 
 🧱 Build manual
 
 Para compilar a biblioteca localmente:
+```
 npm run build
+```
 
 Saída esperada:
-``bash
+
+```
 dist/
  ├─ validator.es.js
  ├─ validator.umd.js
  └─ validator.d.ts
- ``
+```
 
 🧾 Licença
 
