@@ -6,11 +6,13 @@ Permite criar e gerenciar campos e regras de validação de forma declarativa e 
 ---
 
 🧠 Conceito
+
 A biblioteca gira em torno de dois conceitos principais:
 * **Field** — representa um campo do formulário com regras e estado de erro.
 * **Form** — agrupa e gerencia múltiplos campos.
 
 🛠️ Exemplo básico
+
 ``typescript
 import { createForm, required, minLength } from '@seu-nome/validator'
 
@@ -24,8 +26,7 @@ name.validate('Al') // => "Deve ter pelo menos 3 caracteres"
 name.validate('Alice') // => ""
 
 form.isValid() // => true ou false
-
-``
+```
 
 🧩 API
 
@@ -125,4 +126,5 @@ MIT
 
 
 💬 Autor
+
 Desenvolvido por Robinson D. S. Santos
