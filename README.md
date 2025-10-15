@@ -10,7 +10,7 @@ Permite criar e gerenciar campos e regras de validação de forma declarativa e 
 A biblioteca gira em torno de três conceitos principais:
 * **Form** — agrupa e gerencia múltiplos campos.
 * **Field** — representa um campo do formulário com regras e estado de erro.
-* **Rule** — função que define a regra de validação.
+* **Rule** — função que define um regra de validação.
 
 ## 🛠️ Exemplo básico
 
