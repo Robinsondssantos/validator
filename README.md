@@ -15,7 +15,7 @@ A biblioteca gira em torno de três conceitos principais:
 ## 🛠️ Exemplo básico
 
 ```ts
-import { createForm, required, minLength } from '@seu-nome/validator'
+import { createForm, required, minLength } from 'validator'
 
 const form = createForm()
 
