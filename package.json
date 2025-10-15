@@ -1,0 +1,35 @@
+{
+  "name": "validator",
+  "version": "0.0.1",
+  "description": "A simple form validator for Vue.js",
+  "main": "dist/validator.umd.js",
+  "module": "dist/validator.es.js",
+  "types": "module",
+  "repository": "git@github.com:Robinsondssantos/validator.git",
+  "author": "Robinson D. S. Santos <robinsonsantos@inobram.com.br>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/validator.es.js",
+      "require": "./dist/validator.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "@types/vue": "^2.0.0",
+    "path": "^0.12.7",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "vue": "^3.5.22"
+  }
+}
