@@ -69,7 +69,7 @@ Uma `Rule` é uma função que recebe o valor do campo e retorna:
 type Rule = (value: string | number | boolean | null) => boolean | string
 ```  
 
-* **Usando nullable com regras**  
+#### * **Usando nullable com regras**  
 
 Se quiser permitir valores vazios, mas ainda validar quando preenchido:  
 ```ts
@@ -82,7 +82,7 @@ username.validate('') // => válido
 username.validate('Al') // => "Deve ter pelo menos 3 caracteres"
 ```
 
-* **Regras encadeadas**  
+#### * **Regras encadeadas**  
 
 Você pode combinar várias regras em um campo:  
 ```ts
