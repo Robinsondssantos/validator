@@ -1,13 +1,13 @@
 # 🧩 Validator  
 
-Uma biblioteca leve e simples de **validação de formulario** para Vue 3.  
+Uma biblioteca leve e simples de **validação de formulário** para Vue 3.  
 Permite criar e gerenciar campos e regras de validação de forma declarativa e reusável
 
 ---
 
 ## 🧠 Conceito  
 
-A biblioteca gira em torno de três conceitos principais:
+A biblioteca é construída sobre três conceitos principais:
 * **Form** — agrupa e gerencia múltiplos campos.
 * **Field** — representa um campo do formulário com regras e estado de erro.
 * **Rule** — função que define uma regra de validação.
