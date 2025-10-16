@@ -1,6 +1,6 @@
 # 🧩 Validator  
 
-Uma biblioteca leve e simples de **validação reativa** para Vue 3.  
+Uma biblioteca leve e simples de **validação de formulario** para Vue 3.  
 Permite criar e gerenciar campos e regras de validação de forma declarativa e reusável
 
 ---
